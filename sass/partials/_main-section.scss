@@ -22,8 +22,8 @@
 	}
 	.featured-items {
 		width: 65vw;
+		max-width: 1200px;
 		margin-left: 35%;
-		margin-right: 5%;
 		height: 70vh;
 		display: flex;
 		flex-flow: row;
@@ -32,7 +32,7 @@
 		background-image: url("/images/living-room.jpg");
 		background-size: cover;
 		width: 100%;
-		max-width: 600px;
+		max-width: 500px;
 		height: 100%;
 		margin-right: 30px;
 	}
@@ -41,7 +41,7 @@
 		background-size: cover;
 		height: 50%;
 		width: 150%;
-		max-width: 600px;
+		max-width: 500px;
 		margin-bottom: 15px;
 	}
 	.secondary-img-2 {
