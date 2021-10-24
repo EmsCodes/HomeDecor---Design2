@@ -1,0 +1,194 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+.logo,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+.logo {
+  font-size: 1.8em;
+}
+
+h1 {
+  font-size: 5em;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.main-text {
+  z-index: 100;
+  position: absolute;
+  color: #fdfdd5;
+  left: 20%;
+  top: 25%;
+}
+
+.main-text p {
+  font-size: 2em;
+  margin-top: 10px;
+  width: 450px;
+  text-align: center;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.main-text .vertical-line {
+  text-align: center;
+  margin-right: 5%;
+}
+
+.featured-items a {
+  text-decoration: none;
+  color: #ffc400;
+}
+
+header {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+header i {
+  margin-right: 10px;
+}
+
+header .logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.781);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+header .logo span {
+  color: #245015dc;
+}
+
+nav ul {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav li {
+  display: inline;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav .active {
+  color: #245015dc;
+}
+
+body {
+  margin: 0;
+}
+
+.green-overlay {
+  background-image: url("/images/linen.png");
+  background-size: contain;
+}
+
+.green-overlay .main-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 100%;
+}
+
+.green-overlay .main-section h2 {
+  color: #fdfdd5;
+}
+
+.green-overlay .pattern {
+  background-color: #2450159d;
+}
+
+.green-overlay .main-img,
+.green-overlay .secondary-img-1,
+.green-overlay .secondary-img-2 {
+  opacity: 40%;
+  position: relative;
+  background-position: center;
+}
+
+.green-overlay .featured-items {
+  width: 65vw;
+  margin-left: 35%;
+  margin-right: 5%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+.green-overlay .main-img {
+  background-image: url("/images/living-room.jpg");
+  background-size: cover;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  margin-right: 30px;
+}
+
+.green-overlay .secondary-img-1 {
+  background-image: url("/images/halloween.jpg");
+  background-size: cover;
+  height: 50%;
+  width: 150%;
+  max-width: 600px;
+  margin-bottom: 15px;
+}
+
+.green-overlay .secondary-img-2 {
+  background-image: url("/images/bedroom.jpg");
+  background-size: cover;
+  height: 50%;
+  width: 150%;
+  max-width: 500px;
+  margin-top: 15px;
+}
+
+.green-overlay .secondary-featured {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}

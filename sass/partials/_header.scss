@@ -1,0 +1,28 @@
+header {
+	padding-left: 5%;
+	padding-right: 5%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+	}
+	i {
+		margin-right: 10px;
+	}
+	.logo {
+		text-transform: uppercase;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.781);
+		margin-top: 15px;
+		margin-bottom: 15px;
+
+		span {
+			color: $green;
+		}
+	}
+}

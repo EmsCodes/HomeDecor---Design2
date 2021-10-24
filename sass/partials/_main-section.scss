@@ -1,0 +1,60 @@
+.green-overlay {
+	background-image: url("/images/linen.png");
+	background-size: contain;
+
+	.main-section {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		height: 100%;
+		h2 {
+			color: $beige-white;
+		}
+	}
+	.pattern {
+		background-color: #2450159d;
+	}
+	.main-img,
+	.secondary-img-1,
+	.secondary-img-2 {
+		opacity: 40%;
+		position: relative;
+		background-position: center;
+	}
+	.featured-items {
+		width: 65vw;
+		margin-left: 35%;
+		margin-right: 5%;
+		height: 70vh;
+		display: flex;
+		flex-flow: row;
+	}
+	.main-img {
+		background-image: url("/images/living-room.jpg");
+		background-size: cover;
+		width: 100%;
+		max-width: 600px;
+		height: 100%;
+		margin-right: 30px;
+	}
+	.secondary-img-1 {
+		background-image: url("/images/halloween.jpg");
+		background-size: cover;
+		height: 50%;
+		width: 150%;
+		max-width: 600px;
+		margin-bottom: 15px;
+	}
+	.secondary-img-2 {
+		background-image: url("/images/bedroom.jpg");
+		background-size: cover;
+		height: 50%;
+		width: 150%;
+		max-width: 500px;
+		margin-top: 15px;
+	}
+	.secondary-featured {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}

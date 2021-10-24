@@ -1,0 +1,43 @@
+body {
+	font-family: $main-font;
+}
+h1,
+.logo,
+h2 {
+	font-family: $headings-font;
+}
+.logo {
+	font-size: 1.8em;
+}
+h1 {
+	font-size: 5em;
+	margin-bottom: 0;
+	font-weight: 400;
+}
+.main-text {
+	z-index: 100;
+	position: absolute;
+	color: $beige-white;
+	left: 20%;
+	top: 25%;
+	p {
+		font-size: 2em;
+		margin-top: 10px;
+		width: 450px;
+		text-align: center;
+		margin-left: 25px;
+		margin-bottom: 10px;
+	}
+
+	.vertical-line {
+		text-align: center;
+		margin-right: 5%;
+	}
+}
+
+.featured-items {
+	a {
+		text-decoration: none;
+		color: $yellow;
+	}
+}
