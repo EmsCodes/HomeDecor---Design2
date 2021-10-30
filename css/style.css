@@ -22,8 +22,9 @@ a {
   z-index: 100;
   position: absolute;
   color: #fdfdd5;
-  left: 10%;
+  left: 8%;
   top: 30%;
+  max-width: 80vw;
 }
 
 .main-text h1 {
@@ -33,24 +34,24 @@ a {
 }
 
 .main-text p {
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-top: 10px;
-  width: 450px;
+  width: 350px;
   max-width: 90vw;
-  text-align: center;
   margin-bottom: 10px;
+  margin-left: 25px;
 }
 
 .vertical-line {
   text-align: center;
   z-index: 100;
   position: absolute;
-  left: 30%;
-  top: 50%;
+  left: 20%;
+  top: 48%;
 }
 
 .vertical-line img {
-  height: 40vh;
+  height: 50vh;
   width: 2px;
 }
 
@@ -73,7 +74,7 @@ a {
   height: 100%;
 }
 
-@media screen and (min-width: 1380px) {
+@media screen and (min-width: 1300px) {
   .logo {
     font-size: 1.8em;
     width: 225px;
@@ -117,6 +118,8 @@ a {
 header {
   padding-left: 5%;
   padding-right: 5%;
+  -webkit-box-shadow: 5px 5px 20px #dadada;
+          box-shadow: 5px 5px 20px #dadada;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,21 +132,10 @@ header {
           justify-content: space-between;
 }
 
-header .menu {
+header:first-child div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-header i {
-  margin-right: 10px;
 }
 
 header .logo {
@@ -158,27 +150,70 @@ header .logo span {
   color: #245015dc;
 }
 
+header nav {
+  display: none;
+}
+
 header ul {
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 header li {
   display: inline;
   text-decoration: none;
+  margin-right: 10px;
 }
 
 header a {
   text-decoration: none;
   color: #3a3a3a;
+  font-size: 1.1em;
+  font-family: "Playfair Display", serif;
+}
+
+header a:hover {
+  color: #245015dc;
+  border-bottom: 1px solid #245015dc;
 }
 
 header .active {
   color: #245015dc;
+  border-bottom: 1px solid #245015dc;
 }
 
-body {
-  margin: 0;
+header .icons {
+  margin-top: 20px;
+  font-size: 1.8em;
+  color: #3a3a3a;
+  margin-right: 20px;
+}
+
+header .icons i {
+  margin-left: 15px;
+}
+
+header .menu {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+header .menu i {
+  font-size: 1.8em;
+  margin-left: 15px;
+  color: #3a3a3a;
+  margin-top: 20px;
+}
+
+footer {
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-top: 150px;
+  padding-bottom: 50px;
+  width: 85%;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .breadcrumbs .home-icon {
@@ -191,6 +226,10 @@ body {
   width: 25px;
 }
 
+body {
+  margin: 0;
+}
+
 .green-overlay {
   background-image: url("/images/linen.png");
   /* Background pattern from Toptal Subtle Patterns */
@@ -198,7 +237,7 @@ body {
 }
 
 .green-overlay .main-section {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 25px;
   height: auto;
 }
@@ -236,16 +275,16 @@ body {
 
 .green-overlay .featured-items .absolute-text {
   bottom: 46%;
-  left: 35%;
+  left: 20%;
   z-index: 100;
 }
 
 .green-overlay .main-featured {
   width: 100%;
+  max-width: 450px;
   height: 90%;
   margin-right: 25px;
   margin-left: 25%;
-  margin-bottom: 45px;
 }
 
 .green-overlay .main-img {
@@ -253,8 +292,9 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/living-room.jpg");
   background-size: cover;
   width: 65%;
-  height: 100%;
+  height: 85%;
   margin-right: 10%;
+  margin-top: 35px;
   max-width: 350px;
   background-position: bottom;
 }
@@ -316,7 +356,7 @@ body {
 .green-overlay .secondary-images, .green-overlay .secondary-img-1, .green-overlay .secondary-img-2, .green-overlay .secondary-img-2:hover, .green-overlay .secondary-img-1:hover {
   background-size: cover;
   height: 40%;
-  width: 100%;
+  width: 90%;
   max-width: 350px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -350,17 +390,17 @@ body {
     padding-bottom: 100px;
   }
   .green-overlay .featured-items {
-    width: 65vw;
-    max-width: 900px;
-    margin-left: 35%;
+    width: 90vw;
+    max-width: 1280px;
+    margin-left: 0%;
     height: 70vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .green-overlay .featured-items .absolute-text {
     bottom: 43%;
@@ -374,6 +414,13 @@ body {
   }
   .green-overlay .main-img {
     width: 100%;
+    height: 100%;
+    margin-right: 10%;
+    margin-top: 0px;
+    max-width: 500px;
+  }
+  .green-overlay .secondary-img-1 {
+    margin-bottom: 15px;
   }
   .green-overlay .secondary-featured {
     -webkit-box-orient: vertical;
@@ -391,6 +438,85 @@ body {
     left: 0%;
     text-align: end;
   }
+  .green-overlay .secondary-images, .green-overlay .secondary-img-1, .green-overlay .secondary-img-2, .green-overlay .secondary-img-2:hover, .green-overlay .secondary-img-1:hover {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .green-overlay {
+    background-image: url("/images/linen.png");
+    /* Background pattern from Toptal Subtle Patterns */
+    background-size: contain;
+  }
+  .green-overlay .main-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .green-overlay .featured-items {
+    width: 75vw;
+    max-width: 1280px;
+    height: 70vh;
+    margin-left: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .green-overlay .featured-items .absolute-text {
+    bottom: 43%;
+    left: 22%;
+    z-index: 100;
+  }
+  .green-overlay .main-featured {
+    width: 100%;
+    height: 100%;
+    margin-right: 25px;
+  }
+  .green-overlay .main-img {
+    width: 100%;
+    height: 100%;
+    margin-right: 10%;
+    margin-top: 0px;
+    max-width: 500px;
+  }
+  .green-overlay .secondary-img-1 {
+    margin-bottom: 15px;
+  }
+  .green-overlay .secondary-featured {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .green-overlay .secondary-featured .absolute-text {
+    bottom: 15%;
+    right: 7.5%;
+    left: 0%;
+    text-align: end;
+  }
+  .green-overlay .secondary-images, .green-overlay .secondary-img-1, .green-overlay .secondary-img-2, .green-overlay .secondary-img-2:hover, .green-overlay .secondary-img-1:hover {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 body .content {
@@ -405,6 +531,7 @@ body .text {
 
 .featured-product {
   width: 80vw;
+  max-width: 650px;
   margin: 0 auto;
   margin-top: 50px;
   background: #eeeeee;
@@ -418,9 +545,11 @@ body .text {
 }
 
 .featured-product img {
-  height: auto;
+  height: 100%;
   width: 100%;
   background: #eeeeee;
+  -webkit-filter: sepia(green);
+          filter: sepia(green);
 }
 
 .featured-product .featured-product__text {
@@ -429,7 +558,7 @@ body .text {
   background: linear-gradient(#245015c7, #245015c7), url("/images/linen.png");
   /* Background pattern from Toptal Subtle Patterns */
   background-size: contain;
-  padding-bottom: 35px;
+  padding-bottom: 50px;
 }
 
 .featured-product .featured-product__text p {
@@ -487,7 +616,6 @@ body .text {
   }
   .featured-product img {
     background: #eeeeee;
-    margin-top: 50px;
     width: 100%;
     height: auto;
     -o-object-fit: contain;
@@ -498,7 +626,6 @@ body .text {
     background: linear-gradient(#245015c7, #245015c7), url("/images/linen.png");
     /* Background pattern from Toptal Subtle Patterns */
     background-size: cover;
-    padding-bottom: 35px;
   }
   .featured-product .featured-product__text p {
     display: block;
@@ -554,9 +681,7 @@ body .text {
   }
   .featured-product img {
     background: #eeeeee;
-    margin-top: 50px;
     width: 100%;
-    height: auto;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -565,7 +690,6 @@ body .text {
     background: linear-gradient(#245015c7, #245015c7), url("/images/linen.png");
     /* Background pattern from Toptal Subtle Patterns */
     background-size: cover;
-    padding-bottom: 35px;
   }
   .featured-product .featured-product__text p {
     display: block;
@@ -600,14 +724,13 @@ body .text {
             transform: scale(1.05);
   }
   .featured-container {
-    max-width: 1100px;
+    max-width: 1000px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 80%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0 auto;
   }
   .featured-container nav {
@@ -628,5 +751,107 @@ body .text {
   }
   .featured-container nav a {
     color: #3a3a3a;
+  }
+}
+
+.products {
+  width: 95vw;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.products h3 {
+  border-bottom: 1px solid #24501550;
+  padding-bottom: 25px;
+  margin-top: 50px;
+  color: #245015dc;
+}
+
+.products .product-categories, .products .product-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  row-gap: 20px;
+  margin-top: 50px;
+}
+
+.products .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 35%;
+}
+
+.products .product .img-2 {
+  display: none;
+}
+
+.products .product:hover .img-1 {
+  display: none;
+}
+
+.products .product:hover .img-2 {
+  display: block;
+}
+
+.products .product img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.products .product h4 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1em;
+}
+
+.products .product p,
+.products .product h4,
+.products .product .buy-btn {
+  color: #3a3a3a;
+}
+
+.product-text {
+  text-align: center;
+}
+
+.product-text .buy-btn {
+  border: 1px solid #ffc400;
+  font-size: 0.8em;
+  padding: 10px;
+  border-radius: 3px;
+  display: block;
+  width: 75%;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.product-text .buy-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background: #ffc400;
+}
+
+@media only screen and (min-width: 850px) {
+  .products .product-section .product {
+    width: 20%;
   }
 }

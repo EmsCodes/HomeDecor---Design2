@@ -2,17 +2,14 @@ header {
 	padding-left: 5%;
 	padding-right: 5%;
 
+	box-shadow: 5px 5px 20px rgb(218, 218, 218);
+
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 
-	.menu {
+	&:first-child div {
 		display: flex;
-		flex-direction: row;
-		align-items: baseline;
-	}
-	i {
-		margin-right: 10px;
 	}
 	.logo {
 		text-transform: uppercase;
@@ -23,6 +20,51 @@ header {
 
 		span {
 			color: $green;
+		}
+	}
+	nav {
+		display: none;
+	}
+	ul {
+		text-decoration: none;
+		margin-right: 25px;
+	}
+	li {
+		display: inline;
+		text-decoration: none;
+		margin-right: 10px;
+	}
+	a {
+		text-decoration: none;
+		color: $grey;
+		font-size: 1.1em;
+		font-family: $headings-font;
+	}
+	a:hover {
+		color: $green;
+		border-bottom: 1px solid $green;
+	}
+	.active {
+		color: $green;
+		border-bottom: 1px solid $green;
+	}
+	.icons {
+		margin-top: 20px;
+		font-size: 1.8em;
+		color: $grey;
+		margin-right: 20px;
+		i {
+			margin-left: 15px;
+		}
+	}
+	.menu {
+		order: 2;
+
+		i {
+			font-size: 1.8em;
+			margin-left: 15px;
+			color: $grey;
+			margin-top: 20px;
 		}
 	}
 }
