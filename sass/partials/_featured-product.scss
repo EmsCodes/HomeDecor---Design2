@@ -9,8 +9,8 @@
 	img {
 		height: 100%;
 		width: 100%;
-		background: #e2e2e2;
-		filter: sepia(0.5);
+		filter: drop-shadow(0 35px 35px rgb(167, 167, 167));
+		border: 1px solid rgb(228, 228, 228);
 	}
 	.featured-product__text {
 		width: 100%;
@@ -27,9 +27,9 @@
 			width: 75%;
 			text-align: center;
 			margin: 0 auto;
-			padding-top: 35px;
+			padding-top: 30px;
 			font-weight: 300;
-			font-size: 1.8em;
+			font-size: 1.5em;
 		}
 		a {
 			background: $yellow;
@@ -54,7 +54,7 @@
 	}
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 550px) {
 	.featured-product {
 		width: 85vw;
 		margin: 0 auto;
