@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="401.983" height="341.453" viewBox="0 0 401.983 341.453">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707070;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_62" data-name="Group 62" transform="translate(-105.517 -67.752)">
+    <g id="Group_60" data-name="Group 60">
+      <g id="Group_59" data-name="Group 59" transform="translate(90 59.205)">
+        <path id="Path_13" data-name="Path 13" class="cls-1" d="M2422,7088.5h318.269a12.5,12.5,0,0,1,12.257,14.952L2720.7,7262.586a12.5,12.5,0,0,1-12.257,10.048H2453.827a12.5,12.5,0,0,1-12.257-10.048l-31.827-159.135A12.5,12.5,0,0,1,2422,7088.5Zm303.021,25H2437.248l26.827,134.135h234.12Z" transform="translate(-2335.269 -7038.293)"/>
+        <g id="Group_61" data-name="Group 61">
+          <path id="Path_14" data-name="Path 14" class="cls-1" d="M2696.158,7402.154h-225.71l-15.673-73.548,24.451-5.21,11.456,53.759h205.476Z" transform="translate(-2348.442 -7104.159)"/>
+        </g>
+        <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-2" cx="24" cy="24" r="24" transform="translate(142 302)"/>
+        <path id="Ellipse_1_-_Outline" data-name="Ellipse 1 - Outline" class="cls-1" d="M24,0A24,24,0,1,1,0,24,24,24,0,0,1,24,0Z" transform="translate(142 302)"/>
+        <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-2" cx="24" cy="24" r="24" transform="translate(283 302)"/>
+        <path id="Ellipse_2_-_Outline" data-name="Ellipse 2 - Outline" class="cls-1" d="M24,0A24,24,0,1,1,0,24,24,24,0,0,1,24,0Z" transform="translate(283 302)"/>
+        <path id="Path_15" data-name="Path 15" class="cls-1" d="M2429.759,7110.007l-60.132-43.913a12.464,12.464,0,0,1-5.062-11.17l12.428,1.086.007-.01,7.158-10.248.128.273.087-.12,60.13,43.912Z" transform="translate(-2349 -7037.205)"/>
+      </g>
+    </g>
+  </g>
+</svg>

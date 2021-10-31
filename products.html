@@ -24,25 +24,40 @@
 			<a href="index.html">
 				<p class="logo">Home<span>|decor</span></p>
 			</a>
-			<div class="menu">
-				<nav aria-labelledby="primary-navigation">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="products.html" class="active">Products</a></li>
-						<li><a href="404.html">About</a></li>
-					</ul>
-				</nav>
-				<img class="cart-icon" src="/images/shopping-cart.png" alt="" />
-				<i class="far fa-heart"></i>
+			<div>
+				<div class="menu">
+					<div class="burger-menu">
+						<i class="fas fa-bars"></i>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="products.html" class="active">Products</a></li>
+							<li><a href="404.html">About</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="icons">
+					<img src="/images/icons/shopping-cart.svg" alt="shopping cart icon" />
+					<i class="far fa-heart"></i>
+				</div>
 			</div>
 		</header>
 		<main class="wrapper">
-			<nav class="breadcrumbs">
+			<nav class="breadcrumbs" aria-labelledby="breadcrumbs navigation">
 				<ul>
 					<li>
 						<a href="index.html">
-							<img class="home-icon" src="/images/icons/home-icon.png" alt="" />
+							<img
+								class="home-icon"
+								src="/images/icons/home.png "
+								alt="homepage icon"
+							/>
 						</a>
+					</li>
+					<i class="fas fa-chevron-right"></i>
+					<li>
+						<a href="products.html" class="active"> Products </a>
 					</li>
 				</ul>
 			</nav>
@@ -119,23 +134,12 @@
 				</div>
 			</section>
 			<section class="products">
-				<h3>Lounge</h3>
+				<h3>Products by rooms</h3>
 				<div class="product-section">
-					<div class="product">
-						<img
-							class="img-1"
-							src="/images/products/herb-pot.png"
-							alt="a herb pot with concrete texture and appearance"
-						/>
-						<img
-							class="img-2"
-							src="/images/products/kubelys-på-fat.png"
-							alt="a herb pot with concrete texture and appearance"
-						/>
+					<div class="product-category product">
 						<div class="product-text">
-							<h4>Herb-Pot from Name</h4>
-							<p><span class="sr-only">Price:</span>10.00$</p>
-							<a href="index.html" class="buy-btn"> Buy now </a>
+							<h4>Lounge</h4>
+							<a class="more-btn" href="index.html" class="buy-btn"> More </a>
 						</div>
 					</div>
 					<div class="product">
@@ -165,23 +169,11 @@
 				</div>
 			</section>
 			<section class="products">
-				<h3>Kitchen</h3>
 				<div class="product-section">
-					<div class="product">
-						<img
-							class="img-1"
-							src="/images/products/herb-pot.png"
-							alt="a herb pot with concrete texture and appearance"
-						/>
-						<img
-							class="img-2"
-							src="/images/products/kubelys-på-fat.png"
-							alt="a herb pot with concrete texture and appearance"
-						/>
+					<div class="product-category product">
 						<div class="product-text">
-							<h4>Herb-Pot from Name</h4>
-							<p><span class="sr-only">Price:</span>10.00$</p>
-							<a href="index.html" class="buy-btn"> Buy now </a>
+							<h4>Kitchen</h4>
+							<a class="more-btn" href="index.html" class="buy-btn"> More </a>
 						</div>
 					</div>
 					<div class="product">
@@ -211,23 +203,11 @@
 				</div>
 			</section>
 			<section class="products">
-				<h3>Bedroom</h3>
 				<div class="product-section">
-					<div class="product">
-						<img
-							class="img-1"
-							src="/images/products/herb-pot.png"
-							alt="a herb pot with concrete texture and appearance"
-						/>
-						<img
-							class="img-2"
-							src="/images/products/kubelys-på-fat.png"
-							alt="a herb pot with concrete texture and appearance"
-						/>
+					<div class="product-category product">
 						<div class="product-text">
-							<h4>Herb-Pot from Name</h4>
-							<p><span class="sr-only">Price:</span>10.00$</p>
-							<a href="index.html" class="buy-btn"> Buy now </a>
+							<h4>Bedroom</h4>
+							<a class="more-btn" href="index.html" class="buy-btn"> More </a>
 						</div>
 					</div>
 					<div class="product">

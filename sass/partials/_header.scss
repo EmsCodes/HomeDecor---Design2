@@ -16,6 +16,7 @@ header {
 		font-weight: bold;
 		color: rgba(0, 0, 0, 0.781);
 		margin-top: 15px;
+		margin-left: 10px;
 		margin-bottom: 15px;
 
 		span {
@@ -40,7 +41,7 @@ header {
 		font-size: 1.1em;
 		font-family: $headings-font;
 	}
-	a:hover {
+	li:hover {
 		color: $green;
 		border-bottom: 1px solid $green;
 	}
@@ -49,22 +50,95 @@ header {
 		border-bottom: 1px solid $green;
 	}
 	.icons {
-		margin-top: 20px;
-		font-size: 1.8em;
+		font-size: 1.5em;
 		color: $grey;
-		margin-right: 20px;
+		img {
+			width: 30px;
+			height: auto;
+		}
 		i {
-			margin-left: 15px;
+			margin-left: 10px;
+			margin-top: 17px;
+			color: $grey-icons;
 		}
 	}
 	.menu {
 		order: 2;
 
 		i {
-			font-size: 1.8em;
+			font-size: 1.4em;
 			margin-left: 15px;
-			color: $grey;
-			margin-top: 20px;
+			color: $grey-icons;
+			margin-top: 17px;
 		}
 	}
+}
+@media screen and(min-width:900px) {
+	header {
+		padding-left: 5%;
+		padding-right: 5%;
+
+		box-shadow: 5px 5px 20px rgb(218, 218, 218);
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		&:first-child div {
+			display: flex;
+		}
+		.logo {
+			text-transform: uppercase;
+			font-weight: bold;
+			color: rgba(0, 0, 0, 0.781);
+			margin-top: 15px;
+			margin-left: 10px;
+			margin-bottom: 15px;
+
+			span {
+				color: $green;
+			}
+		}
+		nav {
+			display: block;
+			margin-top: 5px;
+		}
+		ul {
+			text-decoration: none;
+			margin-right: 25px;
+		}
+		li {
+			display: inline;
+			text-decoration: none;
+			margin-right: 10px;
+		}
+		a {
+			text-decoration: none;
+			color: $grey;
+			font-size: 1.1em;
+			font-family: $headings-font;
+		}
+		li:hover {
+			color: $green;
+			border-bottom: 1px solid $green;
+		}
+		.active {
+			color: $green;
+			border-bottom: 1px solid $green;
+		}
+		.icons {
+			i {
+				margin-top: 19px;
+			}
+		}
+		.menu {
+			order: initial;
+
+			i {
+				display: none;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1300px) {
 }
