@@ -1,5 +1,13 @@
+@font-face {
+  font-family: Oswald;
+  src: url("/fonts/Oswald-VariableFont_wght.ttf");
+  font-weight: 100, 1000;
+  font-style: normal;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: oswald, sans-serif;
+  font-weight: 300;
 }
 
 h1,
@@ -118,8 +126,8 @@ a {
 header {
   padding-left: 5%;
   padding-right: 5%;
-  -webkit-box-shadow: 5px 5px 20px #dadada;
-          box-shadow: 5px 5px 20px #dadada;
+  -webkit-box-shadow: 3px 3px 20px #f0f0f0;
+          box-shadow: 3px 3px 20px #f0f0f0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

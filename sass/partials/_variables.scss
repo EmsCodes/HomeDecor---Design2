@@ -1,8 +1,15 @@
+@font-face {
+	font-family: Oswald;
+	src: url("/fonts/Oswald-VariableFont_wght.ttf");
+	font-weight: 100, 1000;
+	font-style: normal;
+}
+
 $yellow: #ffc400;
 $beige-white: rgb(253, 253, 213);
 $green: #245015dc;
 $grey: rgb(58, 58, 58);
-$main-font: "Open Sans", sans-serif;
+$main-font: oswald, sans-serif;
 $headings-font: "Playfair Display", serif;
 
 $grey-icons: #707070;
