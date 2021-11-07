@@ -1,14 +1,11 @@
 .green-overlay {
-	background-image: url("/images/linen.png");
-	/* Background pattern from Toptal Subtle Patterns */
-	background-size: contain;
 	.main-section {
 		padding-top: 50px;
 		padding-bottom: 25px;
 		height: auto;
 	}
 	.pattern {
-		background-color: #2450159d;
+		background: linear-gradient(#245015a2, #245015a2), url("/images/linen.png");
 	}
 	.main-img,
 	.secondary-img-1,

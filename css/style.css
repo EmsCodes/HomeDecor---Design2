@@ -1,23 +1,36 @@
 @font-face {
-  font-family: Oswald;
-  src: url("/fonts/Oswald-VariableFont_wght.ttf");
-  font-weight: 100, 1000;
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-VariableFont_wght.ttf");
+  font-weight: 100, 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/fonts/PlayfairDisplay.ttf");
+  font-weight: 100, 900;
   font-style: normal;
 }
 
 body {
-  font-family: oswald, sans-serif;
-  font-weight: 300;
+  font-family: "Raleway", sans-serif;
 }
 
 h1,
 .logo,
-h2 {
+h2,
+h3,
+h4 {
   font-family: "Playfair Display", serif;
 }
 
 a {
   text-decoration: none;
+}
+
+header a {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
 }
 
 .logo {
@@ -29,7 +42,7 @@ a {
 .main-text {
   z-index: 100;
   position: absolute;
-  color: #fdfdd5;
+  color: #c2c2a4;
   left: 8%;
   top: 30%;
   max-width: 80vw;
@@ -44,6 +57,7 @@ a {
 .main-text p {
   font-size: 1.2em;
   margin-top: 10px;
+  font-weight: 300;
   width: 350px;
   max-width: 90vw;
   margin-bottom: 10px;
@@ -65,7 +79,8 @@ a {
 
 .absolute-text h2 {
   color: #fdfdd5;
-  font-size: 1.5em;
+  font-size: 1.6em;
+  font-weight: 500;
   margin-bottom: 0;
   margin-top: 0;
   margin-bottom: 5px;
@@ -75,11 +90,17 @@ a {
   font-size: 1em;
   text-decoration: none;
   color: #ffc400;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
 }
 
 .featured-items .element-link {
   display: block;
   height: 100%;
+}
+
+.featured-items p {
+  font-weight: 200;
 }
 
 @media screen and (min-width: 1300px) {
@@ -89,23 +110,20 @@ a {
     height: auto;
   }
   .main-text {
-    z-index: 100;
-    position: absolute;
     color: #fdfdd5;
-    left: 21%;
-    top: 25%;
+    left: 20%;
+    top: 20%;
   }
   .main-text h1 {
-    font-size: 5em;
+    font-size: 6em;
     margin-bottom: 0;
-    font-weight: 400;
   }
   .main-text p {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-top: 10px;
     width: 450px;
     text-align: center;
-    margin-left: 25px;
+    margin-left: 50px;
     margin-bottom: 10px;
   }
   .vertical-line {
@@ -176,9 +194,8 @@ header li {
 
 header a {
   text-decoration: none;
-  color: #3a3a3a;
+  color: #5c5c5c;
   font-size: 1.1em;
-  font-family: "Playfair Display", serif;
 }
 
 header li:hover {
@@ -193,16 +210,16 @@ header .active {
 
 header .icons {
   font-size: 1.5em;
-  color: #3a3a3a;
+  color: #5c5c5c;
 }
 
 header .icons img {
   width: 30px;
   height: auto;
+  margin-left: 10px;
 }
 
 header .icons i {
-  margin-left: 10px;
   margin-top: 17px;
   color: #707070;
 }
@@ -268,9 +285,8 @@ header .menu i {
   }
   header a {
     text-decoration: none;
-    color: #3a3a3a;
+    color: #5c5c5c;
     font-size: 1.1em;
-    font-family: "Playfair Display", serif;
   }
   header li:hover {
     color: #245015dc;
@@ -296,11 +312,29 @@ header .menu i {
 footer {
   margin: 0 auto;
   padding-top: 50px;
-  margin-top: 150px;
+  padding-top: 75px;
   padding-bottom: 50px;
-  width: 85%;
+  width: 100%;
   text-align: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  background: -webkit-gradient(linear, left top, left bottom, from(#245015a2), to(#245015a2)), url("/images/linen.png");
+  background: linear-gradient(#245015a2, #245015a2), url("/images/linen.png");
+  /* Background pattern from Toptal Subtle Patterns */
+  background-size: contain;
+  color: #fdfdd5;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+footer .social-icons {
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+footer .fa-twitter,
+footer .fa-facebook {
+  margin-right: 10px;
 }
 
 .breadcrumbs {
@@ -349,12 +383,6 @@ body {
   margin: 0;
 }
 
-.green-overlay {
-  background-image: url("/images/linen.png");
-  /* Background pattern from Toptal Subtle Patterns */
-  background-size: contain;
-}
-
 .green-overlay .main-section {
   padding-top: 50px;
   padding-bottom: 25px;
@@ -362,7 +390,8 @@ body {
 }
 
 .green-overlay .pattern {
-  background-color: #2450159d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#245015a2), to(#245015a2)), url("/images/linen.png");
+  background: linear-gradient(#245015a2, #245015a2), url("/images/linen.png");
 }
 
 .green-overlay .main-img,
@@ -595,16 +624,6 @@ body {
   }
 }
 
-body .content {
-  height: 100vh;
-  background: repeating-linear-gradient(150deg, #245015dc, #245015dc 100px, #fdfdd5 15px, #fdfdd5 350px);
-}
-
-body .text {
-  text-align: center;
-  margin-top: 150px;
-}
-
 .featured-product {
   width: 80vw;
   max-width: 650px;
@@ -640,14 +659,25 @@ body .text {
   display: none;
 }
 
+.featured-product .featured-product__text .price {
+  display: block;
+  width: 75%;
+  font-size: 1.3em;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #fdfdd5;
+}
+
 .featured-product .featured-product__text h2 {
   color: #fdfdd5;
-  width: 75%;
+  width: 90%;
   text-align: center;
   margin: 0 auto;
   padding-top: 30px;
-  font-weight: 300;
-  font-size: 1.5em;
+  font-weight: 400;
+  font-size: 1.7em;
 }
 
 .featured-product .featured-product__text a {
@@ -659,7 +689,7 @@ body .text {
   color: #000;
   text-align: center;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 .featured-product .featured-product__text a:hover {
@@ -703,9 +733,11 @@ body .text {
   .featured-product .featured-product__text p {
     display: block;
     width: 75%;
+    font-size: 1.3em;
+    font-weight: 300;
     text-align: center;
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 20px;
     color: #fdfdd5;
   }
   .featured-product .featured-product__text h2 {
@@ -713,9 +745,10 @@ body .text {
     width: 75%;
     text-align: center;
     margin: 0 auto;
-    padding-top: 50px;
-    font-weight: 300;
+    padding-top: 30px;
+    padding-bottom: 15px;
     font-size: 1.8em;
+    border-bottom: 1px solid rgba(253, 253, 213, 0.418);
   }
   .featured-product .featured-product__text a {
     background: #ffc400;
@@ -723,10 +756,11 @@ body .text {
     border-radius: 3px;
     display: block;
     width: 30%;
-    color: #000;
     text-align: center;
     margin: 0 auto;
     margin-top: 35px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
   }
   .featured-product .featured-product__text a:hover {
     -webkit-transform: scale(1.05);
@@ -776,8 +810,7 @@ body .text {
     text-align: center;
     margin: 0 auto;
     margin-top: 15px;
-    font-weight: 300;
-    font-size: 1.8em;
+    font-size: 2em;
   }
   .featured-product .featured-product__text a {
     background: #ffc400;
@@ -785,7 +818,6 @@ body .text {
     border-radius: 3px;
     display: block;
     width: 30%;
-    color: #000;
     text-align: center;
     margin: 0 auto;
     margin-top: 35px;
@@ -810,7 +842,9 @@ body .text {
     display: block;
   }
   .featured-container nav h1 {
-    font-weight: 500;
+    font-weight: 600;
+    font-style: bold;
+    color: #245015dc;
   }
   .featured-container nav ul {
     list-style-type: none;
@@ -821,14 +855,19 @@ body .text {
     font-size: 1.2em;
   }
   .featured-container nav a {
-    color: #3a3a3a;
+    color: #5c5c5c;
   }
   .featured-container nav a:hover {
     color: #245015dc;
+    text-decoration: underline;
   }
   .featured-container nav .active {
     color: #245015dc;
   }
+}
+
+.wrapper {
+  margin-bottom: 150px;
 }
 
 .products {
@@ -882,7 +921,7 @@ body .text {
 
 .products .product img {
   width: 100%;
-  height: 125px;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -890,13 +929,16 @@ body .text {
 .products .product h4 {
   margin: 0;
   font-family: "Playfair Display", serif;
-  font-size: 1em;
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
-.products .product p,
-.products .product h4,
-.products .product .buy-btn {
-  color: #3a3a3a;
+.products .product p {
+  color: #5c5c5c;
+}
+
+.products .product a {
+  color: #000;
 }
 
 .products .product-category {
@@ -935,20 +977,25 @@ body .text {
 
 .product-text .buy-btn {
   border: 1px solid #ffc400;
-  font-size: 0.8em;
+  font-size: 0.9em;
   padding: 10px;
   border-radius: 3px;
   display: block;
   width: 75%;
-  color: #000;
   text-align: center;
   margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
 }
 
 .product-text .buy-btn:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   background: #ffc400;
+}
+
+.product-text .price {
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 700px) {

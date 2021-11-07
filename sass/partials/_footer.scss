@@ -1,9 +1,24 @@
 footer {
 	margin: 0 auto;
 	padding-top: 50px;
-	margin-top: 150px;
+	padding-top: 75px;
 	padding-bottom: 50px;
-	width: 85%;
+	width: 100%;
 	text-align: center;
-	border-top: 1px solid rgba(0, 0, 0, 0.25);
+	background: linear-gradient(#245015a2, #245015a2), url("/images/linen.png");
+	/* Background pattern from Toptal Subtle Patterns */
+	background-size: contain;
+	color: $beige-white;
+	p {
+		font-size: 1.2em;
+	}
+
+	.social-icons {
+		font-size: 2em;
+		margin-bottom: 25px;
+	}
+	.fa-twitter,
+	.fa-facebook {
+		margin-right: 10px;
+	}
 }
